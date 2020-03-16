@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlightManager.Data.Models\FlightManager.Data.Models.csproj" />
+    <ProjectReference Include="..\FlightManager.Data\FlightManager.Data.csproj" />
+    <ProjectReference Include="..\FlightManager.ViewModels\FlightManager.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
