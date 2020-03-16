@@ -20,15 +20,11 @@ namespace FlightManager.Data.Models
 
         public string Nationality { get; set; }
 
-        public string PlaneUniqueId { get; set; }
-
-        public int TicketCount { get; set; }
+        public int FlightId { get; set; }
 
         public int BusinessTickets { get; set; }
 
         public int RegularTickets { get; set; }
-
-        public string TicketType { get; set; }
 
         public string Email { get; set; }
     }

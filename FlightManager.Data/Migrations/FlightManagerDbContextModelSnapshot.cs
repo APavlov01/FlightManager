@@ -65,7 +65,13 @@ namespace FlightManager.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("BusinessTickets")
+                        .HasColumnType("int");
+
                     b.Property<string>("EGN")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
@@ -82,6 +88,15 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlaneUniqueId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RegularTickets")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TicketCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("TicketType")
                         .HasColumnType("nvarchar(max)");
