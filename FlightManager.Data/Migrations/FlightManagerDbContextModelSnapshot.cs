@@ -77,6 +77,9 @@ namespace FlightManager.Data.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("FlightId")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
@@ -89,17 +92,8 @@ namespace FlightManager.Data.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PlaneUniqueId")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("RegularTickets")
                         .HasColumnType("int");
-
-                    b.Property<int>("TicketCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TicketType")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
