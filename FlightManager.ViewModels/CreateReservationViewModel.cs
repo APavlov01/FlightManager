@@ -39,8 +39,7 @@ namespace FlightManager.ViewModels
         public string Nationality { get; set; }
 
         [Display(Name = "Type of ticket")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a phone number")]
-        [RegularExpression(@"^[Regular][Business]$", ErrorMessage = "Please enter a ticket type")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a ticket type")]
         public string TicketType { get; set; }
 
         [Display(Name = "Plane Unique Id")]

@@ -28,6 +28,8 @@ namespace FlightManager.Data.Models
 
         public int RegularTickets { get; set; }
 
+        public string TicketType { get; set; }
+
         public string Email { get; set; }
     }
 }
