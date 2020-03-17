@@ -10,6 +10,8 @@ namespace FlightManager.Data.Models
 
         public string FlightId{ get; set; }
 
+        public int TotalTicketCount { get; set; }
+
         public int BusinessTickets { get; set; }
 
         public int RegularTickets { get; set; }

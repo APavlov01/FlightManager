@@ -39,8 +39,8 @@ namespace FlightManager.ViewModels
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter a ticket type")]
         public string TicketType { get; set; }
 
-        [Display(Name = "Plane Unique Id")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the unique id of the plane")]
+        [Display(Name = "ReservationId")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter the unique id of the reservation")]
         public int ReservationId { get; set; }
 
         [Display(Name = "Email")]

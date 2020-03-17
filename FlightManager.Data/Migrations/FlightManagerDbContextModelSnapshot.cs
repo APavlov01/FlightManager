@@ -113,6 +113,9 @@ namespace FlightManager.Data.Migrations
                     b.Property<int>("RegularTickets")
                         .HasColumnType("int");
 
+                    b.Property<int>("TotalTicketCount")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Reservations");

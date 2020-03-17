@@ -9,6 +9,8 @@ namespace FlightManager.ViewModels
     {
         public int Id { get; set; }
 
+        public int TotalTicketCount { get; set; }
+
         public int FlightId { get; set; }
 
         [Display(Name = "Regular Tickets")]
