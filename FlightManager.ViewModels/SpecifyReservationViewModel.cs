@@ -9,7 +9,7 @@ namespace FlightManager.ViewModels
     {
         public int Id { get; set; }
 
-        public int FlightID { get; set; }
+        public int FlightId { get; set; }
 
         [Display(Name = "Regular Tickets")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please enter regular tickets count!")]

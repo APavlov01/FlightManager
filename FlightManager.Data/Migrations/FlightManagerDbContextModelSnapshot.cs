@@ -58,15 +58,12 @@ namespace FlightManager.Data.Migrations
                     b.ToTable("Flights");
                 });
 
-            modelBuilder.Entity("FlightManager.Data.Models.Reservation", b =>
+            modelBuilder.Entity("FlightManager.Data.Models.Passenger", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("BusinessTickets")
-                        .HasColumnType("int");
 
                     b.Property<string>("EGN")
                         .HasColumnType("nvarchar(max)");
@@ -76,9 +73,6 @@ namespace FlightManager.Data.Migrations
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("FlightId")
-                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
@@ -90,6 +84,30 @@ namespace FlightManager.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReservationId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TicketType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Passengers");
+                });
+
+            modelBuilder.Entity("FlightManager.Data.Models.Reservation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("BusinessTickets")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FlightId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RegularTickets")
